@@ -277,11 +277,11 @@ h3
 
 #hebergement
 {
-    background-color: #F2F2F2;
-    border-radius: 1.5rem;
-    padding: 2rem;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
 }
-}
+
 
 .titre_hebergements_a_marseille
 {
@@ -301,13 +301,14 @@ h3
 .container_item
 {
     background-color: #F2F2F2;
-    border-radius: 20pxa;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     margin-bottom: 60px;
+    padding: 20px;
 }
 
 .box_carte
@@ -398,12 +399,9 @@ hebergement_notation
 
 #container_hebergements_populaires
 {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 45px 38px 31px 45px;
-    max-width: 345px;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
 }
 
 .hebergement_les_plus_populaires
