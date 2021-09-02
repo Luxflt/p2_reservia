@@ -459,55 +459,47 @@ h3 {
 
 /*Activités à marseille*/
 
-.grid
-{
+.activitie_grid{
     display: grid;
-    column-gap: 2.5em;
-    row-gap: 2.5em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
-    max-width: 1350px;
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+    gap: 37.5px;
+    height: 450px;
+    grid-auto-flow: column;
 }
 
-
-.card {
-    background-color: white;
-    min-height:6em;
-    cursor:pointer;
-    box-shadow: 2px 2px 15px #8080807a;
-    border-radius: 20px;
+.card1{
+    grid-row-end: span 13;
 }
-.activitehebergement 
-{
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 1rem;
+
+.card2{
+    grid-row-end: span 7;
+}
+
+.card3{
+    grid-row-end: span 6;
+}
+
+.activitycard{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition-duration: 0.1s;
+    box-shadow: 0 0 7px #c1c1c1;
 }
 
-.photo_activite1,
-.photo_activite2,
-.photo_activite3,
-.photo_activite4,
-.photo_activite5,
-.photo_activite6 {
-    background-size: 100% 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 0px 0px 22px 0px;
+.activitycard img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
-
-.activite1,
-.activite2,
-.activite3,
-.activite4,
-.activite5,
-.activite6 {
-    box-shadow: 0 0 20px #0000002e;
-    padding: 0px 0px 20px 0px;
-    border-radius: 20px;
-    margin: 0px 0px 20px 0px;
+.activite_nom{
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
+
