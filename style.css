@@ -313,14 +313,16 @@ h3 {
     border-radius: 20px;
 }
 
-.titre_hebergements_a_marseille {
+.titre_hebergements_a_marseille 
+{
     margin: 0px;
     ;
     font-size: large;
     margin-bottom: 21px;
 }
 
-#hebergements_a_marseille {
+#hebergements_a_marseille 
+{
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -399,7 +401,18 @@ h3 {
     font-weight: bold;
 }
 
-.fas.fa-star.grey-star {
+.fa-star{
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.bluestar
+{
+    color: #0065FC;
+}
+
+
+.grey-star {
     color: grey;
 }
 
@@ -502,4 +515,28 @@ h3 {
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+/* Footer */
+
+footer{
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer div{
+    flex: 1;
+}
+
+footer li{
+    margin-bottom: 15px;
+}
+
+footer a:hover{
+    font-weight: 600;
+    color: #0065FC;
+}
+
 
